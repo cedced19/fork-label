@@ -50,67 +50,115 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: #242431;
-    font-family: 'Open Sans', sans-serif;
+    font-family: calluna,Georgia,Time,sans-serif;
     position: absolute;
     top:0;
     right:0;
     left:0;
     bottom:0;
-    color:#FFF;
+    color:#000;
 }
 ::-moz-selection {
-    background-color: #FFF;
-    color:#242431;
+    background-color: #242431;
+    color:#FFF;
 }
 ::selection {
-    background-color: #FFF;
-    color:#242431;
+    background-color: #242431;
+    color:#FFF;
 }
 a {
     color: inherit;
+    border-bottom: 1px dotted #38373D;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:link:hover {
+    color: #d6a5f5;
 }
 
-.content-warp {
-    margin: 0px auto;
-    padding: 2em;
-    max-width: 30em;
+header {
+    background-color: #242431;
+    height:115px;
+    color:#FFF;
 }
-.content-warp h1, .content-warp h2 {
+
+header h1 {
     text-align: center;
     padding-top: 15px;
-}
-.content-warp h1 {
-    -webkit-animation: fadeh1 1s;
-    -webkit-animation-fill-mode: both;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 52px;
     font-weight: 700;
     color: #FFF;
-    margin-bottom: 15px;
+    padding-bottom:15px;
+    font-family: futura-pt,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
 }
-.content-warp h2 {
-    -webkit-animation: fadeh2 1s;
-    -webkit-animation-fill-mode: both;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 300;
-    color: #FFF;
-}
-.content-warp .description {
+header p {
     text-align: center;
     font-size: 19px;
 }
 
-.content-warp input[type="text"], .content-warp input[type="email"], textarea, select {
-color: #888;
-width: 70%;
-padding: 0px 0px 0px 5px;
-border: 1px solid;
-background: #FFF;
-outline: 0;
-font: 200 12px/25px Arial, Helvetica, sans-serif;
-height: 30px;
-line-height:15px;
-margin: 2px 6px 16px 0px;
+main h2 {
+    color: #242431;
+    font-family: futura-pt,sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    line-height: 52px;
+    font-weight: 550;
+    padding-bottom:15px;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 0px auto;
+    padding: 2em;
+    max-width: 30em;
+}
+
+main input[type="text"], main input[type="email"], textarea, select {
+    color: #888;
+    width: 70%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid;
+    background: #FFF;
+    outline: 0;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 16px 0px;
+}
+
+main label {
+    display: block;
+    font-weight: bold;
+}
+
+main pre {
+    background-color: #dedede;
+    height: 70px;    
+}
+
+footer {
+    margin: 0px auto;
+    padding: 2em;
+    max-width: 30em;
+}
+
+footer hr {
+    width: 80px;
+    box-sizing: content-box;
+    height: 4px;
+    margin: 0px auto;
+    display: block;
+    border: 0px none;
+    border-bottom: 4px solid #000;
+}
+
+footer p {
+    padding-top:5px;
 }

@@ -10,16 +10,32 @@
         <!-- endbuild -->
     </head>
     <body ng-app="ForkLabel" ng-controller="ForkLabelCtrl">
-
-            <main class="content-warp" role="main">
+            
+            <header>
                 <h1>Fork Label</h1>
-                <p class="description">A website to generate a label with "Fork Me on GitHub".</p>
+                <p>A website to generate a label with "Fork Me on GitHub".</p>
+            </header>
+            <main role="main">
+                <h2>Input</h2>
+                <form>
+                    <label for="repo">Repositorie name:</label>
+                    <input type="text" name="repo">
+
+                    <label for="user">Username:</label>
+                    <input type="text" name="user">
+                </form>
+                <h2>Resultes</h2>
+                <pre></pre>
             </main>
+            <footer>
+                <hr>
+                <p>Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a></p>
+            </footer>
+            
 
-
-            <!-- build:js scripts/scripts.js
+            <!-- build:js scripts/scripts.js -->
             <script type="text/javascript" src="scripts/angular.min.js"></script>
             <script type="text/javascript" src="scripts/app.js"></script>
-             endbuild -->
+            <!-- endbuild -->
     </body>
 </html>
