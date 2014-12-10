@@ -8,6 +8,21 @@
         <!-- build:css styles/styles.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+        <meta name="author" content="Cedced19">
+        <meta name="twitter:cars" content="summary">
+        <meta name="twitter:title" content="Cedced19">
+        <meta name="twitter:image" content="/profile.png">
+        <meta name="twitter:site" content="@cedced19">
+        <meta name="twitter:author" content="@cedced19">
+        <meta name="author" content="Cedced19">
+        <meta name="description" content="A website to generate a label with Fork Me on GitHub.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/profile.png">
+        <meta property="og:language" content="fr_FR">
+        <meta property="og:url" content="cedced19.github.io">
+        <link href="//plus.google.com/104855167193751168501/" rel="publisher">
+        <meta name="msvalidate.01" content="7AA9997055DFFA5FA75B150DB285F647">
+        <meta name="google-site-verification" content="daG8-WfmzTnxEOZ0gvyKhFVPyqGcp_MuANWkyM8THK8">
     </head>
     <body ng-app="ForkLabel" ng-controller="ForkLabelCtrl">
             
@@ -18,11 +33,14 @@
             <main class="animate">
                 <h2>Input</h2>
                 <form>
-                    <label for="user">Username:</label>
-                    <input type="text" name="user" ng-keyup="compile()" ng-model="config.username">
+                    <label>Username:</label>
+                    <input type="text" ng-keyup="compile()" ng-model="config.username">
                    
-                    <label for="repo">Repositorie name:</label>
-                    <input type="text" name="repo" ng-keyup="compile()" ng-model="config.reponame"> 
+                    <label>Repositorie name:</label>
+                    <input type="text" ng-keyup="compile()" ng-model="config.reponame"> 
+                    
+                    <label>Are you a organisation ?</label>
+                    <p ng-click="compile()"><input type="checkbox" id="organisation" ng-model="config.organisation" ng-checked="config.organisation"><label for="organisation"><span class="ui"></span></label></p>
                 </form>
                 <h2>Resultes</h2>
                 <h3>Styles</h3>

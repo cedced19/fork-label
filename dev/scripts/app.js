@@ -5,7 +5,11 @@ angular.module('ForkLabel', [])
         $scope.config = data;
         
         $scope.compile = function(){
-            $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.end;
+            if($scope.config.organisation){
+                $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.organisation;
+            }else{
+                $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.alone;
+            }
         }
     }).error(function() {
         $scope.error = true;
