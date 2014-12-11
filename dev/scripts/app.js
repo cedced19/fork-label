@@ -5,8 +5,8 @@ angular.module('ForkLabel', [])
         $scope.config = data;
         
         $scope.compile = function(){
-            if($scope.config.organisation){
-                $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.organisation;
+            if($scope.config.organization){
+                $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.organization;
             }else{
                 $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.alone;
             }
