@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           files:[
              {
               dest: 'scripts/scripts.js',
-              src: [ 'dev/scripts/angular.min.js', 'dev/scripts/app.js' ]
+              src: [ 'dev/scripts/angular.min.js', 'dev/scripts/angular-cookies.min.js', 'dev/scripts/app.js' ]
               }
              ]
         }
