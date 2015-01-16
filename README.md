@@ -1,6 +1,4 @@
 #Fork Label
-
-[![devDependency Status](https://david-dm.org/cedced19/fork-label/dev-status.svg)](https://david-dm.org/cedced19/fork-label#info=devDependencies)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 A website to generate a label with "Fork Me on GitHub".
@@ -9,8 +7,8 @@ Do `grunt` to compile.
 
 ###Generetated code
 
-```html
-<style>
+####CSS:
+```css
 .forkme {
     transform: rotate(45deg);
     background-color: #FFF;
@@ -33,7 +31,10 @@ Do `grunt` to compile.
     text-align: center;
     text-decoration: none;
 }
-</style>
+```
+
+####Html:
+```html
 <div id="forkme">
     <a href="https://github.com/USERNAME/REPO">Fork me on Github</a>
 </div>
