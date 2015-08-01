@@ -1,9 +1,8 @@
 #Fork Label
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 A website to generate a label with "Fork Me on GitHub".
 
-Do `grunt` to compile.
+Do `gulp` to compile.
 
 ###Generetated code
 
