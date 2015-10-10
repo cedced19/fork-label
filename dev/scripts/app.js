@@ -3,8 +3,8 @@ angular.module('ForkLabel', ['ngCookies'])
     $http.get('config.json').success(function(data) {
         $scope.result = '';
         $scope.config = data;
-        
-            
+
+
         $scope.compile = function(){
             $cookieStore.put('reponame', $scope.config.reponame);
             $cookieStore.put('username', $scope.config.username);
@@ -14,13 +14,13 @@ angular.module('ForkLabel', ['ngCookies'])
             }else{
                 $scope.result = $scope.config.html.start + $scope.config.username +'/'+ $scope.config.reponame + $scope.config.html.alone;
             }
-        }
-       
-        if($cookieStore.get('organization') != undefined || $cookieStore.get('reponame') != undefined || $cookieStore.get('username') != undefined){
+        };
+
+        if($cookieStore.get('organization') !== undefined || $cookieStore.get('reponame') !== undefined || $cookieStore.get('username') !== undefined){
             $scope.config.reponame = $cookieStore.get('reponame');
             $scope.config.username = $cookieStore.get('username');
             $scope.config.organization = $cookieStore.get('organization') ;
-            $scope.compile(); 
+            $scope.compile();
         }
     }).error(function() {
         $scope.error = true;

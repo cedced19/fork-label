@@ -22,10 +22,9 @@
         <meta property="og:url" content="cedced19.github.io">
         <link href="//plus.google.com/104855167193751168501/" rel="publisher">
         <meta name="msvalidate.01" content="7AA9997055DFFA5FA75B150DB285F647">
-        <meta name="google-site-verification" content="daG8-WfmzTnxEOZ0gvyKhFVPyqGcp_MuANWkyM8THK8">
     </head>
     <body ng-app="ForkLabel" ng-controller="ForkLabelCtrl">
-            
+
             <header>
                 <h1 class="animate">Fork Label</h1>
                 <p class="animate">A website to generate a label with "Fork Me on GitHub".</p>
@@ -35,10 +34,10 @@
                 <form>
                     <label>Username:</label>
                     <input type="text" ng-keyup="compile()" ng-model="config.username">
-                   
+
                     <label>Repositorie name:</label>
-                    <input type="text" ng-keyup="compile()" ng-model="config.reponame"> 
-                    
+                    <input type="text" ng-keyup="compile()" ng-model="config.reponame">
+
                     <label>Are you a organization ?</label>
                     <p ng-click="compile()"><input type="checkbox" id="organization" ng-model="config.organization" ng-checked="config.organization"><label for="organization"><span class="ui"></span></label></p>
                 </form>
@@ -52,12 +51,12 @@
                 <hr>
                 <p>Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a></p>
             </footer>
-            
+
             <div class="forkme">
                 <a href="https://github.com/cedced19/fork-label">Fork me on Github</a>
             </div>
-            
-           
+
+
             <!-- build:js scripts/scripts.js -->
             <script type="text/javascript" src="scripts/angular.min.js"></script>
             <script type="text/javascript" src="scripts/angular-cookies.min.js"></script>
